@@ -1,3 +1,10 @@
 <h1>This is projects index</h1>
 
 <%= link_to 'Back to home', root_path %>
+
+<% @projects.each do |post| %>
+  <p><%= post.name %></p>
+  <p><%= post.description %></p>
+  <p><p><%= post.image_url %></p>
+  <p><%= post.demo_url %></p>
+<% end %>
