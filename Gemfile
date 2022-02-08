@@ -12,6 +12,9 @@ gem 'turbolinks', '~> 5'
 # gem 'jbuilder', '~> 2.7'
 gem 'simple_form'
 gem 'devise'
+gem 'trestle'
+gem 'trestle-tinymce'
+gem 'trestle-auth'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
