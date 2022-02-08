@@ -1,7 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Project.create(user_id: 1,
+               name: 'Webglossary',
+               description: 'Glossaire des mots utiles pour le monde de la programmation et de développement web.',
+               image_url: 'https://drive.google.com/file/d/1nFtprLTs3DXTsI8-ctMQccLiaDYwKN-l/view?usp=sharing',
+               demo_url: 'https://webglossary.herokuapp.com/')
