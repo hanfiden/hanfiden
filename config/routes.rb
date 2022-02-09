@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   resources :projects, only: [:index]
   resources :posts, only: [:index]
-  resources :contact_requests, only: %i[new create]
+  resources :contact_requests, only: %i[index new create]
 end
