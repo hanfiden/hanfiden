@@ -4,7 +4,7 @@
 
 <% @posts.each do |post| %>
   <p><%= post.title %></p>
-  <p><%= post.description %></p>
+  <p><%= post.description.html_safe %></p>
   <p><p><%= post.image_url %></p>
   <p><%= post.source_url %></p>
 <% end %>
