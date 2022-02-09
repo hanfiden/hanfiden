@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.3'
 
+### CORE ####
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
@@ -10,8 +11,13 @@ gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # gem 'jbuilder', '~> 2.7'
+
+#### BASE ####
 gem 'simple_form'
 gem 'devise'
+gem 'dotenv-rails', groups: [:development, :test]
+
+#### ADMIN ####
 gem 'trestle'
 gem 'trestle-tinymce'
 gem 'trestle-auth'
