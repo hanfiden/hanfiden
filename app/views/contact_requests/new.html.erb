@@ -1,3 +1,20 @@
 <h1>This is contact page</h1>
 
 <%= link_to 'Back to home', root_path %>
+
+<% if flash[:notice] %>
+  <div class="">
+    <h2><%= flash[:notice] %></h2>
+    <p>❤️ Merci d'avoir pris le temps de remplir ce formulaire. ❤️</p>
+  </div>
+<% end %>
+
+<%= simple_form_for @contact_request do |f| %>
+  <%= f.input :last_name, label: "Nom"%>
+  <%= f.input :first_name, label: "Prénom"%>
+  <%= f.input :email, label: "Email"%>
+  <%= f.input :phone_number, label: "Téléphone (Optionnel)"%>
+  <%= f.input :subject, label: "Sujet du message"%>
+  <%= f.text_area :content, label: "Message"%>
+  <%= f.button :submit, 'Envoyer' %>
+<% end %>

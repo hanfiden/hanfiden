@@ -1,4 +1,8 @@
 class ContactRequestsController < ApplicationController
+  def index
+    redirect_to new_contact_request_path
+  end
+
   def new
     @contact_request = ContactRequest.new
   end
