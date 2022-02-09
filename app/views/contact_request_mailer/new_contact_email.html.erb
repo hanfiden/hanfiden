@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>Hello ! 👋🏻</p>
+    <p>
+    --------------------------
+    </p>
+    <p>Name: <%= @contact_request.last_name.capitalize %> <%= @contact_request.first_name.capitalize %></p>
+    <p>Email: <%= @contact_request.email %></p>
+    <% if @contact_request.phone_number%>
+      <p>Phone: <%= @contact_request.phone_number %></p>
+    <% end %>
+    <p>
+    Message:<br>
+    ----------
+    </p>
+    <p><%= @contact_request.content %></p>
+  </body>
+</html>
