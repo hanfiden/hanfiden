@@ -1,7 +1,7 @@
 class ContactRequestMailer < ApplicationMailer
-  def new_contact_request_email
+  def new_contact_email
     @contact_request = params[:contact_request]
 
-    mail(to: GMAIL_EMAIL, subject: 'Un email de ton site fidendev 🎉 !!')
+    mail(to: ENV['GMAIL_EMAIL'], subject: @contact_request.subject)
   end
 end

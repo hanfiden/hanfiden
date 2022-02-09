@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h3>Hey ! 👋🏻</h3>
+    <p>
+    --------------------------
+    </p>
+    <p>Tu viens de recevoir une nouvelle message de <strong><%= @contact_request.last_name.capitalize %> <%= @contact_request.first_name.capitalize %></strong></p>
+    <p>Son addresse email est: <strong><%= @contact_request.email %></strong></p>
+    <% if @contact_request.phone_number%>
+      <p>Son numéro de téléphone est: <strong><%= @contact_request.phone_number %></strong></p>
+    <% end %>
+    <p>
+    Il/Elle t'a laissé un message:
+    </p>
+    <p><%= @contact_request.content %></p>
+  </body>
+</html>
