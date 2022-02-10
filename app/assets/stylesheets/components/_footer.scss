@@ -1,0 +1,51 @@
+@import 'config/index';
+
+/*==================== FOOTER ====================*/
+
+.footer{
+  padding-top: 2rem;
+}
+
+.footer__container{
+  row-gap: 3.5rem;
+}
+
+.footer__bg{
+  background-color: $first-color-second;
+  padding: 2rem 0 3rem;
+}
+
+.footer__title{
+  font-size: $h1-font-size;
+  margin-bottom: $mb-0-25;
+}
+
+.footer__subtitle{
+  font-size: $small-font-size;
+}
+
+.footer__links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover{
+  color: $first-color-lighter;
+}
+
+.footer__copy{
+  font-size: $smaller-font-size;
+  text-align: center;
+  color: $text-color-lighter;
+  margin-top: $mb-3;
+  margin-left: $mb-2-5;
+  margin-right: $mb-2-5;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__source{
+  color: #FFF;
+}
