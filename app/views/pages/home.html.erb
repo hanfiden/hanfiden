@@ -1,583 +1,523 @@
-<header class="header" id="header">
-  <nav class="nav container">
-    <a href="#" class="nav__logo">Fiden</a>
-    <div class="nav__menu" id="nav-menu">
-      <ul class="nav__list grid">
-        <li class="nav__item">
-          <a href="#home" class="nav__link active-link">
-            <i class="fas fa-home nav__icon"></i> ACCUEIL
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="#portfolio" class="nav__link">
-            <i class="fas fa-portrait nav__icon"></i> PROJETS
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="#services" class="nav__link">
-            <i class="fas fa-briefcase nav__icon"></i> BLOGS
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="#contact" class="nav__link">
-            <i class="fas fa-id-card nav__icon"></i> CONTACT
-          </a>
-        </li>
-      </ul>
-      <i class="fas fa-times-circle nav__close" id="nav-close"></i>
-    </div>
-    <div class="nav__btns">
-      <!-- Theme color switch -->
-      <i class="far fa-moon change-theme" id="theme-button"></i>
-
-      <div class="nav__toggle" id="nav-toggle">
-        <i class="fas fa-cubes"></i>
+<!--==================== HOME ====================-->
+<section class="home section" id="home">
+  <div class="home__container container grid">
+    <div class="home__content grid">
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/fiden-han/" class="home__social-icon" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/hanfiden" class="home__social-icon" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://kitt.lewagon.com/alumni/hanfiden" class="home__social-icon" target="_blank">
+          <i class="fas fa-bus"></i>
+        </a>
       </div>
-    </div>
-  </nav>
-</header>
 
-<!--==================== MAIN ====================-->
-<main class="main">
-  <!--==================== HOME ====================-->
-  <section class="home section" id="home">
-    <div class="home__container container grid">
-      <div class="home__content grid">
-        <div class="home__social">
-          <a href="https://www.linkedin.com/in/fiden-han/" class="home__social-icon" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/hanfiden" class="home__social-icon" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://kitt.lewagon.com/alumni/hanfiden" class="home__social-icon" target="_blank">
-            <i class="fas fa-bus"></i>
-          </a>
-        </div>
-
-        <div class="home__img">
-          <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <mask id="mask0" mask-type="alpha">
-              <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
-                  130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
-                  97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
-                  0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-            </mask>
-            <g mask="url(#mask0)">
-              <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-                  165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-                  129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-                  -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-              <image class="home__blob-img" x='-7' y='-15' href="assets/images/me.png" />
-            </g>
-          </svg>
-        </div>
-        <div class="home__data">
-          <h1 class="home__title">Fiden Han</h1>
-          <h3 class="home__subtitle">Développeur Web Full-stack</h3>
-          <p class="home__description">Autodidacte et passionné par le monde de la programmation, plus spécifiquement le web. J'ai décidé de faire la formation
-          Le Wagon afin de concrétiser mon projet et devenir un développeur web.</p>
-          <a href="mailto:fidenhan@gmail.com" target="_blank" class="button button--flex">
-            Contactez-moi <i class="far fa-paper-plane button__icon"></i>
-          </a>
-        </div>
+      <div class="home__img">
+        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <mask id="mask0" mask-type="alpha">
+            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+          </mask>
+          <g mask="url(#mask0)">
+            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+            <image class="home__blob-img" x='-7' y='-15' href="https://drive.google.com/uc?export=view&id=1FwuQFnSm1inSgyTBQQpuxi-eOtj4LdrC" />
+          </g>
+        </svg>
       </div>
-      <div class="home__scroll">
-        <a href="#about" class="home__scroll-button button--flex">
-          <i class="fas fa-mouse home__scroll-mouse"></i>
-          <span class="home__scroll-name">Vers le bas</span>
-          <i class="fas fa-arrow-down home__scroll-arrow"></i>
+      <div class="home__data">
+        <h1 class="home__title">Fiden Han</h1>
+        <h3 class="home__subtitle">Développeur Web Full-stack</h3>
+        <p class="home__description">Autodidacte et passionné par le monde de la programmation, plus spécifiquement le web. J'ai décidé de faire la formation
+        Le Wagon afin de concrétiser mon projet et devenir un développeur web.</p>
+        <a href="mailto:fidenhan@gmail.com" target="_blank" class="button button--flex">
+          Contactez-moi <i class="far fa-paper-plane button__icon"></i>
         </a>
       </div>
     </div>
-  </section>
-
-  <!--==================== ABOUT ====================-->
-  <section class="about section" id="about">
-    <h2 class="section__title">Bio</h2>
-    <span class="section__subtitle">Introduction</span>
-
-    <div class="about__container container grid">
-      <img src="assets/images/about.png" alt="" class="about__img">
-
-      <div class="about__data">
-        <p class="about__description">J'ai travaillé dans une pharmacie en tant que réceptionniste après avoir quitté mon université. J'ai découvert la
-        programmation web dès ma première année de licence en physique, et depuis je suis tombé amoureux de cette matière.</p>
-        <p class="about__description">J'ai donc décidé d'arrêter ma première année et j'ai commencé à consacrer ma nouvelle vie, à devenir développeur web.</p>
-
-        <div class="about__info">
-          <div>
-            <span class="about__info-title">1+</span>
-            <span class="about__info-name">Années <br>d'expérience </span>
-          </div>
-
-          <div>
-            <span class="about__info-title">6</span>
-            <span class="about__info-name">Projets <br> réalisés </span>
-          </div>
-        </div>
-
-        <div class="about__buttons">
-          <a download="" href="assets/CV_Fiden.pdf" class="button button--flex">
-            Télécharger CV<i class="fas fa-download button__icon"></i>
-          </a>
-        </div>
-      </div>
+    <div class="home__scroll">
+      <a href="#about" class="home__scroll-button button--flex">
+        <i class="fas fa-mouse home__scroll-mouse"></i>
+        <span class="home__scroll-name">Vers le bas</span>
+        <i class="fas fa-arrow-down home__scroll-arrow"></i>
+      </a>
     </div>
-  </section>
-
-  <!--==================== SKILLS ====================-->
-  <section class="skills section" id="skills">
-    <h2 class="section__title">Compétences</h2>
-    <span class="section__subtitle">Mes niveaux techniques</span>
-
-    <div class="skills__container container grid">
-      <div>
-        <!--==================== SKILLS FRONT ====================-->
-        <div class="skills__content skills__close">
-          <div class="skills__header">
-            <i class="fas fa-code skills__icon"></i>
-
-            <div>
-              <h1 class="skills__title">Développeur Frontend</h1>
-              <span class="skills__subtitle">Plus de 1 an</span>
-            </div>
-            <i class="fas fa-angle-down skills__arrow"></i>
-          </div>
-
-          <div class="skills__list">
-            <div class="skills__logo">
-              <img src="assets/images/logo/html.png" alt="html" title="HTML">
-            </div>
-            <div class="skills__logo">
-              <img src="assets/images/logo/css.png" alt="css" title="CSS">
-            </div>
-            <div class="skills__logo">
-              <img src="assets/images/logo/js.png" alt="js" title="JavaScript">
-            </div>
-          </div>
-        </div>
-
-        <!--==================== SKILLS BACK ====================-->
-        <div class="skills__content skills__close">
-          <div class="skills__header">
-            <i class="fas fa-server skills__icon"></i>
-
-            <div>
-              <h1 class="skills__title">Développeur Backend</h1>
-              <span class="skills__subtitle">Plus de 1 an</span>
-            </div>
-            <i class="fas fa-angle-down skills__arrow"></i>
-          </div>
-
-          <div class="skills__list">
-            <div class="skills__logo">
-              <img src="assets/images/logo/ruby.png" alt="ruby" title="Ruby">
-            </div>
-            <div class="skills__logo">
-              <img src="assets/images/logo/rails.png" alt="rails" title="Rails">
-            </div>
-            <div class="skills__logo">
-              <img src="assets/images/logo/sql.png" alt="sql" title="PostgreSQL">
-            </div>
-          </div>
-        </div>
-
-        <!--==================== SKILLS DESIGN ====================-->
-        <div class="skills__content skills__close">
-          <div class="skills__header">
-            <i class="fas fa-pencil-alt skills__icon"></i>
-
-            <div>
-              <h1 class="skills__title">Designer</h1>
-              <span class="skills__subtitle">Plus de 1 an</span>
-            </div>
-            <i class="fas fa-angle-down skills__arrow"></i>
-          </div>
-
-          <div class="skills__list">
-            <div class="skills__logo">
-              <img src="assets/images/logo/figma.png" alt="figma" title="Figma">
-            </div>
-            <div class="skills__logo">
-              <img src="assets/images/logo/ps.png" alt="photoshop" title="Photoshop">
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!--==================== QUALIFICATION ====================-->
-  <section class="qualification section">
-    <h2 class="section__title">Qualifications</h2>
-    <span class="section__subtitle">Mon parcours</span>
-
-    <div class="qualification__container container">
-      <div class="qualification__tabs">
-        <div class="qualification__button button--flex qualification__active" data-target='#education'>
-          <i class="fas fa-school qualification__icon"></i> Etudes
-        </div>
-
-        <div class="qualification__button button--flex" data-target='#work'>
-          <i class="fas fa-briefcase qualification__icon"></i> Expériences
-        </div>
-      </div>
-
-      <div class="qualification__sections">
-        <!--==================== QUALIFICATION STUDY ====================-->
-        <div class="qualification__content qualification__active" data-content id="education">
-          <!--==================== QUALIFICATION STUDY 1 ====================-->
-          <div class="qualification__data">
-            <div>
-              <h3 class="qualification__title">Remise à niveau scientifique</h3>
-              <span class="qualification__subtitle">Université Catholique de l'Ouest - Angers</span>
-              <div class="qualification__calendar">
-                <i class="far fa-calendar-alt"></i>
-                2014 -2015
-              </div>
-            </div>
-
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-          </div>
-          <!--==================== QUALIFICATION STUDY 2 ====================-->
-          <div class="qualification__data">
-            <div></div>
-
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-
-            <div>
-              <h3 class="qualification__title">Licence Physique</h3>
-              <span class="qualification__subtitle">Université de Caen - Caen</span>
-              <div class="qualification__calendar">
-                <i class="far fa-calendar-alt"></i>
-                2015 -2017
-              </div>
-            </div>
-          </div>
-          <!--==================== QUALIFICATION STUDY 3 ====================-->
-          <div class="qualification__data">
-            <div>
-              <h3 class="qualification__title">Concepteur / développeur web</h3>
-              <span class="qualification__subtitle">Le Wagon - Nantes</span>
-              <div class="qualification__calendar">
-                <i class="far fa-calendar-alt"></i>
-                2021 -2021
-              </div>
-            </div>
-
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-          </div>
-        </div>
-        <!--==================== QUALIFICATION WORK ====================-->
-        <div class="qualification__content" data-content id="work">
-          <!--==================== QUALIFICATION WORK 1 ====================-->
-          <div class="qualification__data">
-            <div></div>
-
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-
-            <div>
-              <h3 class="qualification__title">Métrologue</h3>
-              <span class="qualification__subtitle">WeAre Groupe - Vendée</span>
-              <div class="qualification__calendar">
-                <i class="far fa-calendar-alt"></i>
-                2017 -2019
-              </div>
-            </div>
-          </div>
-          <!--==================== QUALIFICATION WORK 2 ====================-->
-          <div class="qualification__data">
-            <div>
-              <h3 class="qualification__title">Réceptionniste</h3>
-              <span class="qualification__subtitle">Pharmacie des Câlins - Cholet</span>
-              <div class="qualification__calendar">
-                <i class="far fa-calendar-alt"></i>
-                2019 -2021
-              </div>
-            </div>
-
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-          </div>
-          <!--==================== QUALIFICATION WORK 3 ====================-->
-          <div class="qualification__data">
-            <div></div>
-
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-
-            <div>
-              <h3 class="qualification__title">Développeur web Full-stack</h3>
-              <span class="qualification__subtitle">Le Wagon - Nantes</span>
-              <div class="qualification__calendar">
-                <i class="far fa-calendar-alt"></i>
-                2021 -2021
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==================== SERVICES ====================-->
-  <section class="services section" id="services">
-    <h2 class="section__title">Savoirs</h2>
-    <span class="section__subtitle">Ce que je sais faire</span>
-
-    <div class="services__container container grid">
-      <!--==================== SERVICE 1 ====================-->
-      <div class="services__content">
-        <div>
-          <i class="fas fa-swatchbook services__icon"></i>
-          <h3 class="services__title">Ui/Ux <br> Designer</h3>
-        </div>
-
-        <span class="button button--flex button--small button--link services__button">
-          Plus d'infos
-          <i class="fas fa-arrow-right button__icon"></i>
-        </span>
-
-        <div class="services__modal">
-          <div class="services__modal-content">
-            <h4 class="services__modal-title">Ui/Ux - <br> Designer</h4>
-            <i class="fas fa-times services__modal-close"></i>
-
-            <ul class="services__modal-services grid">
-              <li class="services__modal-service">
-                <i class="far fa-check-circle services__modal-icon"></i>
-                <p>Définir l'objectif et la stratégie d'un site web</p>
-              </li>
-              <li class="services__modal-service">
-                <i class="far fa-check-circle services__modal-icon"></i>
-                <p>Création d'un plan du site</p>
-              </li>
-              <li class="services__modal-service">
-                <i class="far fa-check-circle services__modal-icon"></i>
-                <p>Création de marquette des éléments interactives</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    <!--==================== SERVICE 2 ====================-->
-      <div class="services__content">
-        <div>
-          <i class="fas fa-laptop-code services__icon"></i>
-          <h3 class="services__title">Développeur <br> Full-stack</h3>
-        </div>
-
-        <span class="button button--flex button--small button--link services__button">
-          Plus d'infos
-          <i class="fas fa-arrow-right button__icon"></i>
-        </span>
-
-        <div class="services__modal">
-          <div class="services__modal-content">
-            <h4 class="services__modal-title">Développeur <br> Full-stack</h4>
-            <i class="fas fa-times services__modal-close"></i>
-
-            <ul class="services__modal-services grid">
-              <li class="services__modal-service">
-                <i class="far fa-check-circle services__modal-icon"></i>
-                <p>Conception et manipulation des bases de données</p>
-              </li>
-              <li class="services__modal-service">
-                <i class="far fa-check-circle services__modal-icon"></i>
-                <p>Développement d'un site web</p>
-              </li>
-              <li class="services__modal-service">
-                <i class="far fa-check-circle services__modal-icon"></i>
-                <p>Intégration des APIs</p>
-              </li>
-              <li class="services__modal-service">
-                <i class="far fa-check-circle services__modal-icon"></i>
-                <p>Utilisation des outils de collaboration</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!--==================== PORTFOLIO ====================-->
-  <section class="portfolio section" id="portfolio">
-    <h2 class="section__title">Portfolio</h2>
-    <span class="section__subtitle">Mes projets récents</span>
-
-    <div class="portfolio__container container">
-      <div class="">
-        <!--==================== PROJECT 1 ====================-->
-        <div class="portfolio__content grid">
-          <img src="assets/images/regaison.png" alt="ré agi son" class="portfolio__img">
-
-          <div class="portfolio__data">
-            <h3 class="portfolio__title">[Ré]Agi'Son</h3>
-            <p class="portfolio__description">Une association nantaise qui permet de
-              favoriser la mixité sociale et de valoriser l’engagement et la création artistique de la jeunesse.
-            </p>
-            <a href="https://reagi-son.fr/" target="_blank" class="button button--flex button--small portfolio__button">
-              Demo
-              <i class="fas fa-external-link-alt button__icon"></i>
-            </a>
-          </div>
-        </div>
-        <!--==================== PROJECT 1 ====================-->
-        <div class="portfolio__content grid">
-          <img src="assets/images/web_glossary.png" alt="web Glossary" class="portfolio__img">
-
-          <div class="portfolio__data">
-            <h3 class="portfolio__title">Web Glossary</h3>
-            <p class="portfolio__description">Glossaire des mots utiles pour le monde
-              de la programmation et de développement web.
-            </p>
-            <a href="https://webglossary.herokuapp.com/" target="_blank" class="button button--flex button--small portfolio__button">
-              Demo
-              <i class="fas fa-external-link-alt button__icon"></i>
-            </a>
-          </div>
-        </div>
-        <!--==================== PROJECT 1 ====================-->
-        <div class="portfolio__content grid">
-          <img src="assets/images/urgence_vitale.jpg" alt="urgence vitale" class="portfolio__img">
-
-          <div class="portfolio__data">
-            <h3 class="portfolio__title">Urgence Vitale</h3>
-            <p class="portfolio__description">Une application qui permet aux médecins
-              de garde d'alerter les astreintes rapidement.</p>
-            <a href="https://www.youtube.com/watch?v=1AYKmFTObQQ&t=2761s&ab_channel=LeWagon" target="_blank" class="button button--flex button--small portfolio__button">
-              Demo
-              <i class="fas fa-external-link-alt button__icon"></i>
-            </a>
-          </div>
-        </div>
-
-        <!--==================== PROJECT 2 ====================-->
-        <div class="portfolio__content grid">
-          <img src="assets/images/pet_never_die.jpg" alt="pet never die" class="portfolio__img">
-
-          <div class="portfolio__data">
-            <h3 class="portfolio__title">Pet Never Die</h3>
-            <p class="portfolio__description">Un clone CRUD de AirB&B, un projet dans le cadre de la formation du Wagon</p>
-            <a href="https://github.com/Gloglok/rails-pets-never-die" target="_blank" class="button button--flex button--small portfolio__button">
-              Demo
-              <i class="fas fa-external-link-alt button__icon"></i>
-            </a>
-          </div>
-        </div>
-
-        <!--==================== PROJECT 3 ====================-->
-        <div class="portfolio__content grid">
-          <img src="assets/images/first_website.jpg" alt="first website" class="portfolio__img">
-
-          <div class="portfolio__data">
-            <h3 class="portfolio__title">La Biodiversité</h3>
-            <p class="portfolio__description">Le tout premier site web non responsive. Un site web entièrement en HTML et CSS.</p>
-            <a href="https://hanfiden.github.io/" target="_blank" class="button button--flex button--small portfolio__button">
-              Demo
-              <i class="fas fa-external-link-alt button__icon"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==================== CONTACT ME ====================-->
-  <section class="contact section" id="contact">
-    <h2 class="section__title">Contact</h2>
-    <span class="section__subtitle">Contactez-moi</span>
-
-    <div class="contact__container container grid">
-      <div>
-        <div class="contact__information">
-          <i class="fas fa-phone contact__icon"></i>
-
-          <div>
-            <h3 class="contact__title">Téléphone</h3>
-            <span class="contact__subtitle">07 69 16 74 65</span>
-          </div>
-        </div>
-
-        <div class="contact__information">
-          <i class="fas fa-at contact__icon"></i>
-
-          <div>
-            <h3 class="contact__title ">Email</h3>
-            <span class="contact__subtitle">fidenhan@gmail.com</span>
-          </div>
-        </div>
-
-        <div class="contact__information">
-          <i class="fas fa-phone contact__icon"></i>
-
-          <div>
-            <h3 class="contact__title">Localisation</h3>
-            <span class="contact__subtitle">Nantes - France</span>
-          </div>
-        </div>
-
-        <div>
-          <a href="mailto:fidenhan@gmail.com" target="_blank" class="button button--flex">
-            Envoyer un message
-            <i class="far fa-paper-plane button__icon"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!--==================== FOOTER ====================-->
-<footer class="footer">
-  <div class="footer__bg">
-    <div class="footer__container container grid">
-      <div>
-        <h1 class="footer__title">Fiden</h1>
-        <span class="footer__subtitle">Développeur Full-stack</span>
-      </div>
-
-      <ul class="footer__links">
-        <li>
-          <a href="#services" class="footer__link">Accueil</a>
-        </li>
-        <li>
-          <a href="#services" class="footer__link">Projets</a>
-        </li>
-        <li>
-          <a href="#portfolio" class="footer__link">Blogs</a>
-        </li>
-        <li>
-          <a href="mailto:fidenhan@gmail.com" target="_blank" class="footer__link">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <p class="footer__copy">Thème utilisé: <a class="footer__source" href="https://github.com/bedimcode/responsive-portfolio-website-Alexa" target="_blank">Ici</a>
-      <br>Copyright &#169; 2022 Fiden. All right reserved
-    </p>
   </div>
-</footer>
+</section>
+
+<!--==================== ABOUT ====================-->
+<section class="about section" id="about">
+  <h2 class="section__title">Bio</h2>
+  <span class="section__subtitle">Introduction</span>
+
+  <div class="about__container container grid">
+    <img src="https://drive.google.com/uc?export=view&id=1kHeuOEZlPPFty_e76eZTieM5lt8HoFYm" alt="" class="about__img">
+
+    <div class="about__data">
+      <p class="about__description">J'ai travaillé dans une pharmacie en tant que réceptionniste après avoir quitté mon université. J'ai découvert la
+      programmation web dès ma première année de licence en physique, et depuis je suis tombé amoureux de cette matière.</p>
+      <p class="about__description">J'ai donc décidé d'arrêter ma première année et j'ai commencé à consacrer ma nouvelle vie, à devenir développeur web.</p>
+
+      <div class="about__info">
+        <div>
+          <span class="about__info-title">1+</span>
+          <span class="about__info-name">Années <br>d'expérience </span>
+        </div>
+
+        <div>
+          <span class="about__info-title">6</span>
+          <span class="about__info-name">Projets <br> réalisés </span>
+        </div>
+      </div>
+
+      <div class="about__buttons">
+        <a download="CV_fiden" href="https://drive.google.com/file/d/1uP4YxAnkLY1CI8pz-M-jTmUfQQ0CxCai/view?usp=sharing" target='_blank' class="button button--flex">
+          Télécharger CV<i class="fas fa-download button__icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Compétences</h2>
+  <span class="section__subtitle">Mes niveaux techniques</span>
+
+  <div class="skills__container container grid">
+    <div>
+      <!--==================== SKILLS FRONT ====================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="fas fa-code skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Développeur Frontend</h1>
+            <span class="skills__subtitle">Plus de 1 an</span>
+          </div>
+          <i class="fas fa-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list">
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1kHeuOEZlPPFty_e76eZTieM5lt8HoFYm" alt="html" title="HTML">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1khN8vmDtPOTEClJghwstUd8vNAGwE-ms" alt="css" title="CSS">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1QyujJKJ05s4cjd8kEDC4avcXsu6sny5U" alt="js" title="JavaScript">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1VHI-opJKsILMqGjJCMbzsPamkb8thiYr" alt="react" title="React">
+          </div>
+        </div>
+      </div>
+
+      <!--==================== SKILLS BACK ====================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="fas fa-server skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Développeur Backend</h1>
+            <span class="skills__subtitle">Plus de 1 an</span>
+          </div>
+          <i class="fas fa-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list">
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=15hjL4AUwHCTUKykMOygWlGeqXhWb4bFA" alt="ruby" title="Ruby">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1AmDpZElWtMRY_KawJoSnz2hrctKA72I2" alt="rails" title="Rails">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1f6QuqsxpmDZNZA8vv_xdJwaG1p7N0Lxg" alt="postgresql" title="PostgreSQL">
+          </div>
+        </div>
+      </div>
+
+      <!--==================== SKILLS AUTRES ====================-->
+      <div class="skills__content skills__close">
+        <div class="skills__header">
+          <i class="fas fa-pencil-alt skills__icon"></i>
+
+          <div>
+            <h1 class="skills__title">Autres</h1>
+            <span class="skills__subtitle">Plus de 1 an</span>
+          </div>
+          <i class="fas fa-angle-down skills__arrow"></i>
+        </div>
+
+        <div class="skills__list">
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1iQAw-zpvGTFWmdEsvRduFYeDX-j9CTeB" alt="git" title="Git">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1DLk4cuJDE6z5tP4xfgsJzmgxh5VrW3jp" alt="github" title="Github">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1ko7c8DxeF4Ymgf6iCT-0jiR8gGeM_nnl" alt="heroku" title="Heroku">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=1kv-6WP5Zyd_ghsLwdFrDHuNJ2d8629Gt" alt="figma" title="Figma">
+          </div>
+          <div class="skills__logo">
+            <img src="https://drive.google.com/uc?export=view&id=12VuRUegEYyv3s0kk2pVAeYsEUvdWLaCF" alt="photoshop" title="Photoshop">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section">
+  <h2 class="section__title">Qualifications</h2>
+  <span class="section__subtitle">Mon parcours</span>
+
+  <div class="qualification__container container">
+    <div class="qualification__tabs">
+      <div class="qualification__button button--flex qualification__active" data-target='#education'>
+        <i class="fas fa-school qualification__icon"></i> Etudes
+      </div>
+
+      <div class="qualification__button button--flex" data-target='#work'>
+        <i class="fas fa-briefcase qualification__icon"></i> Expériences
+      </div>
+    </div>
+
+    <div class="qualification__sections">
+      <!--==================== QUALIFICATION STUDY ====================-->
+      <div class="qualification__content qualification__active" data-content id="education">
+        <!--==================== QUALIFICATION STUDY 1 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Remise à niveau scientifique</h3>
+            <span class="qualification__subtitle">Université Catholique de l'Ouest - Angers</span>
+            <div class="qualification__calendar">
+              <i class="far fa-calendar-alt"></i>
+              2014 -2015
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+        <!--==================== QUALIFICATION STUDY 2 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Licence Physique</h3>
+            <span class="qualification__subtitle">Université de Caen - Caen</span>
+            <div class="qualification__calendar">
+              <i class="far fa-calendar-alt"></i>
+              2015 -2017
+            </div>
+          </div>
+        </div>
+        <!--==================== QUALIFICATION STUDY 3 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Concepteur / développeur web</h3>
+            <span class="qualification__subtitle">Le Wagon - Nantes</span>
+            <div class="qualification__calendar">
+              <i class="far fa-calendar-alt"></i>
+              2021 -2021
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+      </div>
+      <!--==================== QUALIFICATION WORK ====================-->
+      <div class="qualification__content" data-content id="work">
+        <!--==================== QUALIFICATION WORK 1 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Métrologue</h3>
+            <span class="qualification__subtitle">WeAre Groupe - Vendée</span>
+            <div class="qualification__calendar">
+              <i class="far fa-calendar-alt"></i>
+              2017 -2019
+            </div>
+          </div>
+        </div>
+        <!--==================== QUALIFICATION WORK 2 ====================-->
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Réceptionniste</h3>
+            <span class="qualification__subtitle">Pharmacie des Câlins - Cholet</span>
+            <div class="qualification__calendar">
+              <i class="far fa-calendar-alt"></i>
+              2019 -2021
+            </div>
+          </div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+        <!--==================== QUALIFICATION WORK 3 ====================-->
+        <div class="qualification__data">
+          <div></div>
+
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+
+          <div>
+            <h3 class="qualification__title">Développeur web Full-stack</h3>
+            <span class="qualification__subtitle">Le Wagon - Nantes</span>
+            <div class="qualification__calendar">
+              <i class="far fa-calendar-alt"></i>
+              2021 -2021
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==================== SERVICES ====================-->
+<section class="services section" id="services">
+  <h2 class="section__title">Savoirs</h2>
+  <span class="section__subtitle">Ce que je sais faire</span>
+
+  <div class="services__container container grid">
+    <!--==================== SERVICE 1 ====================-->
+    <div class="services__content">
+      <div>
+        <i class="fas fa-swatchbook services__icon"></i>
+        <h3 class="services__title">Ui/Ux <br> Designer</h3>
+      </div>
+
+      <span class="button button--flex button--small button--link services__button">
+        Plus d'infos
+        <i class="fas fa-arrow-right button__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <h4 class="services__modal-title">Ui/Ux - <br> Designer</h4>
+          <i class="fas fa-times services__modal-close"></i>
+
+          <ul class="services__modal-services grid">
+            <li class="services__modal-service">
+              <i class="far fa-check-circle services__modal-icon"></i>
+              <p>Définir l'objectif et la stratégie d'un site web</p>
+            </li>
+            <li class="services__modal-service">
+              <i class="far fa-check-circle services__modal-icon"></i>
+              <p>Création d'un plan du site</p>
+            </li>
+            <li class="services__modal-service">
+              <i class="far fa-check-circle services__modal-icon"></i>
+              <p>Création de marquette des éléments interactives</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <!--==================== SERVICE 2 ====================-->
+    <div class="services__content">
+      <div>
+        <i class="fas fa-laptop-code services__icon"></i>
+        <h3 class="services__title">Développeur <br> Full-stack</h3>
+      </div>
+
+      <span class="button button--flex button--small button--link services__button">
+        Plus d'infos
+        <i class="fas fa-arrow-right button__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <h4 class="services__modal-title">Développeur <br> Full-stack</h4>
+          <i class="fas fa-times services__modal-close"></i>
+
+          <ul class="services__modal-services grid">
+            <li class="services__modal-service">
+              <i class="far fa-check-circle services__modal-icon"></i>
+              <p>Conception et manipulation des bases de données</p>
+            </li>
+            <li class="services__modal-service">
+              <i class="far fa-check-circle services__modal-icon"></i>
+              <p>Développement d'un site web</p>
+            </li>
+            <li class="services__modal-service">
+              <i class="far fa-check-circle services__modal-icon"></i>
+              <p>Intégration des APIs</p>
+            </li>
+            <li class="services__modal-service">
+              <i class="far fa-check-circle services__modal-icon"></i>
+              <p>Utilisation des outils de collaboration</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!--==================== PORTFOLIO ====================-->
+<section class="portfolio section" id="portfolio">
+  <h2 class="section__title">Portfolio</h2>
+  <span class="section__subtitle">Mes projets récents</span>
+
+  <div class="portfolio__container container">
+    <div class="">
+      <!--==================== PROJECT 1 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/images/regaison.png" alt="ré agi son" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">[Ré]Agi'Son</h3>
+          <p class="portfolio__description">Une association nantaise qui permet de
+            favoriser la mixité sociale et de valoriser l’engagement et la création artistique de la jeunesse.
+          </p>
+          <a href="https://reagi-son.fr/" target="_blank" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="fas fa-external-link-alt button__icon"></i>
+          </a>
+        </div>
+      </div>
+      <!--==================== PROJECT 1 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/images/web_glossary.png" alt="web Glossary" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Web Glossary</h3>
+          <p class="portfolio__description">Glossaire des mots utiles pour le monde
+            de la programmation et de développement web.
+          </p>
+          <a href="https://webglossary.herokuapp.com/" target="_blank" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="fas fa-external-link-alt button__icon"></i>
+          </a>
+        </div>
+      </div>
+      <!--==================== PROJECT 1 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/images/urgence_vitale.jpg" alt="urgence vitale" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Urgence Vitale</h3>
+          <p class="portfolio__description">Une application qui permet aux médecins
+            de garde d'alerter les astreintes rapidement.</p>
+          <a href="https://www.youtube.com/watch?v=1AYKmFTObQQ&t=2761s&ab_channel=LeWagon" target="_blank" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="fas fa-external-link-alt button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--==================== PROJECT 2 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/images/pet_never_die.jpg" alt="pet never die" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">Pet Never Die</h3>
+          <p class="portfolio__description">Un clone CRUD de AirB&B, un projet dans le cadre de la formation du Wagon</p>
+          <a href="https://github.com/Gloglok/rails-pets-never-die" target="_blank" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="fas fa-external-link-alt button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--==================== PROJECT 3 ====================-->
+      <div class="portfolio__content grid">
+        <img src="assets/images/first_website.jpg" alt="first website" class="portfolio__img">
+
+        <div class="portfolio__data">
+          <h3 class="portfolio__title">La Biodiversité</h3>
+          <p class="portfolio__description">Le tout premier site web non responsive. Un site web entièrement en HTML et CSS.</p>
+          <a href="https://hanfiden.github.io/" target="_blank" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="fas fa-external-link-alt button__icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact</h2>
+  <span class="section__subtitle">Contactez-moi</span>
+
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <i class="fas fa-phone contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title">Téléphone</h3>
+          <span class="contact__subtitle">07 69 16 74 65</span>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <i class="fas fa-at contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title ">Email</h3>
+          <span class="contact__subtitle">fidenhan@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <i class="fas fa-phone contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title">Localisation</h3>
+          <span class="contact__subtitle">Nantes - France</span>
+        </div>
+      </div>
+
+      <div>
+        <a href="mailto:fidenhan@gmail.com" target="_blank" class="button button--flex">
+          Envoyer un message
+          <i class="far fa-paper-plane button__icon"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--==================== SCROLL-TOP ====================-->
 <a href="#" class="scrollup" id="scroll-up">

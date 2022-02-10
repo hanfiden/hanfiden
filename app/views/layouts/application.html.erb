@@ -10,7 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/navbar' %>
+    <main class="main">
+      <%= yield %>
+    </main>
+    <%= render 'shared/footer' %>
   </body>
   <script src="https://kit.fontawesome.com/e70cbfdfda.js" crossorigin="anonymous"></script>
 </html>
