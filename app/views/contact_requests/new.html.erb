@@ -1,20 +1,60 @@
-<h1>This is contact page</h1>
+<!--==================== CONTACT ME ====================-->
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact</h2>
+  <span class="section__subtitle">Contactez-moi</span>
 
-<%= link_to 'Back to home', root_path %>
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <i class="fas fa-phone contact__icon"></i>
 
-<% if flash[:notice] %>
-  <div class="">
-    <h2><%= flash[:notice] %></h2>
-    <p>❤️ Merci d'avoir pris le temps de remplir ce formulaire. ❤️</p>
+        <div>
+          <h3 class="contact__title">Téléphone</h3>
+          <span class="contact__subtitle">07 69 16 74 65</span>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <i class="fas fa-at contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title ">Email</h3>
+          <span class="contact__subtitle">fidenhan@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <i class="fas fa-phone contact__icon"></i>
+
+        <div>
+          <h3 class="contact__title">Localisation</h3>
+          <span class="contact__subtitle">Nantes - France</span>
+        </div>
+      </div>
+
+      <div>
+        <a href="mailto:fidenhan@gmail.com" target="_blank" class="button button--flex">
+          Envoyer un message
+          <i class="far fa-paper-plane button__icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <% if flash[:notice] %>
+      <div class="">
+        <h2><%= flash[:notice] %></h2>
+        <p>❤️ Merci d'avoir pris le temps de remplir ce formulaire. ❤️</p>
+      </div>
+    <% end %>
+
+    <%= simple_form_for @contact_request  do |f| %>
+      <%= f.input :last_name, label: "Nom"%>
+      <%= f.input :first_name, label: "Prénom"%>
+      <%= f.input :email, label: "Email"%>
+      <%= f.input :phone_number, label: "Téléphone (Optionnel)"%>
+      <%= f.input :subject, label: "Sujet du message"%>
+      <%= f.text_area :content, label: "Message"%>
+      <%= f.button :submit, 'Envoyer' %>
+    <% end %>
   </div>
-<% end %>
-
-<%= simple_form_for @contact_request do |f| %>
-  <%= f.input :last_name, label: "Nom"%>
-  <%= f.input :first_name, label: "Prénom"%>
-  <%= f.input :email, label: "Email"%>
-  <%= f.input :phone_number, label: "Téléphone (Optionnel)"%>
-  <%= f.input :subject, label: "Sujet du message"%>
-  <%= f.text_area :content, label: "Message"%>
-  <%= f.button :submit, 'Envoyer' %>
-<% end %>
+</section>

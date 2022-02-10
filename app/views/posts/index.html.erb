@@ -1,10 +1,22 @@
-<h1>This is post index</h1>
+<!--==================== POSTS ====================-->
+<section class="portfolio section" id="portfolio">
+  <h2 class="section__title">Blogs</h2>
+  <span class="section__subtitle">Mes articles récents</span>
 
-<%= link_to 'Back to home', root_path %>
+  <div class="portfolio__container container">
+    <% @posts.each do |post| %>
+      <div class="portfolio__content grid">
+        <img src="https://drive.google.com/uc?export=view&id=<%= post.image_url %>" alt="ré agi son" class="portfolio__img">
 
-<% @posts.each do |post| %>
-  <p><%= post.title %></p>
-  <p><%= post.description.html_safe %></p>
-  <p><p><%= post.image_url %></p>
-  <p><%= post.source_url %></p>
-<% end %>
+        <div class="portfolio__data">
+          <h3 class="portfolio__title"><%= post.title %></h3>
+          <p class="portfolio__description"><%= post.description.html_safe %></p>
+          <a href="<%= post.source_url %>" target="_blank" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="fas fa-external-link-alt button__icon"></i>
+          </a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
