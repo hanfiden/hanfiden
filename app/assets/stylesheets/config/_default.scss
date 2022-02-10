@@ -1,0 +1,15 @@
+@import 'variables';
+
+// Default css style //
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
