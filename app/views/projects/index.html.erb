@@ -1,10 +1,22 @@
-<h1>This is projects index</h1>
+<!--==================== PROJECTS ====================-->
+<section class="portfolio section" id="portfolio">
+  <h2 class="section__title">Portfolio</h2>
+  <span class="section__subtitle">Mes projets récents</span>
 
-<%= link_to 'Back to home', root_path %>
+  <div class="portfolio__container container">
+    <% @projects.each do |project| %>
+      <div class="portfolio__content grid">
+        <img src="https://drive.google.com/uc?export=view&id=<%= project.image_url %>" alt="ré agi son" class="portfolio__img">
 
-<% @projects.each do |post| %>
-  <p><%= post.name %></p>
-  <p><%= post.description.html_safe %></p>
-  <p><p><%= post.image_url %></p>
-  <p><%= post.demo_url %></p>
-<% end %>
+        <div class="portfolio__data">
+          <h3 class="portfolio__title"><%= project.name %></h3>
+          <p class="portfolio__description"><%= project.description.html_safe %></p>
+          <a href="<%= project.demo_url %>" target="_blank" class="button button--flex button--small portfolio__button">
+            Demo
+            <i class="fas fa-external-link-alt button__icon"></i>
+          </a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
