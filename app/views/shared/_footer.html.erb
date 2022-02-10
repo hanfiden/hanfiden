@@ -9,16 +9,16 @@
 
       <ul class="footer__links">
         <li>
-          <a href="#services" class="footer__link">Accueil</a>
+          <%= link_to 'Accueil', root_path, class: 'footer__link' %>
         </li>
         <li>
-          <a href="#services" class="footer__link">Projets</a>
+          <%= link_to 'Projets', projects_path, class: 'footer__link' %>
         </li>
         <li>
-          <a href="#portfolio" class="footer__link">Blogs</a>
+          <%= link_to 'Accueil', posts_path, class: 'footer__link' %>
         </li>
         <li>
-          <a href="mailto:fidenhan@gmail.com" target="_blank" class="footer__link">Contact</a>
+          <%= link_to 'Accueil', new_contact_request_path, class: 'footer__link' %>
         </li>
       </ul>
     </div>

@@ -1,28 +1,28 @@
 <!--==================== NAVBAR ====================-->
 <header class="header" id="header">
   <nav class="nav container">
-    <a href="#" class="nav__logo">Fiden</a>
+    <%= link_to 'Fiden', root_path,class: 'nav__logo' %>
     <div class="nav__menu" id="nav-menu">
       <ul class="nav__list grid">
         <li class="nav__item">
-          <a href="#home" class="nav__link active-link">
-            <i class="fas fa-home nav__icon"></i> ACCUEIL
-          </a>
+          <%= link_to root_path, class: 'nav__link' do %>
+            <i class="fas fa-home nav__icon"></i>ACCUEIL
+          <% end %>
         </li>
         <li class="nav__item">
-          <a href="#portfolio" class="nav__link">
-            <i class="fas fa-portrait nav__icon"></i> PROJETS
-          </a>
+          <%= link_to projects_path, class: 'nav__link' do %>
+            <i class="fa-solid fa-diagram-project nav__icon"></i>PROJETS
+          <% end %>
         </li>
         <li class="nav__item">
-          <a href="#services" class="nav__link">
-            <i class="fa-brands fa-microblog nav__icon"></i> BLOGS
-          </a>
+          <%= link_to posts_path, class: 'nav__link' do %>
+            <i class="fa-brands fa-microblog nav__icon"></i>BLOGS
+          <% end %>
         </li>
         <li class="nav__item">
-          <a href="#contact" class="nav__link">
-            <i class="fas fa-id-card nav__icon"></i> CONTACT
-          </a>
+          <%= link_to new_contact_request_path, class: 'nav__link' do %>
+            <i class="fas fa-address-book nav__icon"></i>CONTACT
+          <% end %>
         </li>
       </ul>
       <i class="fas fa-times-circle nav__close" id="nav-close"></i>
