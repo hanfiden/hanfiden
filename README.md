@@ -1,15 +1,15 @@
 <h1 align="center">Hi 👋, I'm Fiden</h1>
 <h3 align="center">A passionate in science and programming 💻</h3>
 
-- 👱🏼‍♂️ Let's check out my [Portfolio](https://hanfiden.github.io/hanfiden/) (Ctrl + click to open on new window)
+- 👱🏼‍♂️ Let's check out my [Portfolio](https://fidendev.fr) (Ctrl + click to open on new window)
 
-- 🧑🏼‍💻 Here, are my projects:\
+- 🧑🏼‍💻 Here, some of my projects:\
 [RéAgi'Son](https://reagi-son.herokuapp.com) (Ctrl + click to open on new window)\
 [Web Glossary](https://webglossary.herokuapp.com) (Ctrl + click to open on new window)\
 [Self do](https://self-do.herokuapp.com/) (Ctrl + click to open on new window)\
 [Urgence Vitale](https://www.youtube.com/watch?v=1AYKmFTObQQ&t=2760s&ab_channel=LeWagon) (Ctrl + click to open on new window)
 
-- 🌱 I’m currently learning **Ruby and Ruby on Rails** and **React**
+- 🌱 I’m currently learning **Ruby**, **Ruby on Rails** and **React**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
