@@ -36,9 +36,9 @@
         <h3 class="home__subtitle">Développeur Web Full-stack</h3>
         <p class="home__description">Autodidacte et passionné par le monde de la programmation, plus spécifiquement le web. J'ai décidé de faire la formation
         Le Wagon afin de concrétiser mon projet et devenir un développeur web.</p>
-        <a href="mailto:fidenhan@gmail.com" target="_blank" class="button button--flex">
+        <%= link_to new_contact_request_path, class: 'button button--flex' do %>
           Contactez-moi <i class="far fa-paper-plane button__icon"></i>
-        </a>
+        <% end %>
       </div>
     </div>
     <div class="home__scroll">
