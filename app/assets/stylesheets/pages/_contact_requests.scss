@@ -83,10 +83,11 @@
   justify-content: center;
   text-align: center;
   margin-top: $mb-2;
+
   button {
     cursor: pointer;
     border: none;
-
+    font-family: $body-font;
     &:hover{
       cursor: pointer;
     }
