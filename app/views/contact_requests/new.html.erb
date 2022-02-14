@@ -19,24 +19,17 @@
 
         <div>
           <h3 class="contact__title ">Email</h3>
-          <span class="contact__subtitle">fidenhan@gmail.com</span>
+          <span class="contact__subtitle">fidendev@gmail.com</span>
         </div>
       </div>
 
       <div class="contact__information">
-        <i class="fas fa-phone contact__icon"></i>
+        <i class="fa-solid fa-location-dot contact__icon"></i>
 
         <div>
           <h3 class="contact__title">Localisation</h3>
           <span class="contact__subtitle">Nantes - France</span>
         </div>
-      </div>
-
-      <div>
-        <a href="mailto:fidenhan@gmail.com" target="_blank" class="button button--flex">
-          Envoyer un message
-          <i class="far fa-paper-plane button__icon"></i>
-        </a>
       </div>
     </div>
 
@@ -47,14 +40,27 @@
       </div>
     <% end %>
 
-    <%= simple_form_for @contact_request  do |f| %>
-      <%= f.input :last_name, label: "Nom"%>
-      <%= f.input :first_name, label: "Prénom"%>
-      <%= f.input :email, label: "Email"%>
-      <%= f.input :phone_number, label: "Téléphone (Optionnel)"%>
-      <%= f.input :subject, label: "Sujet du message"%>
-      <%= f.text_area :content, label: "Message"%>
-      <%= f.button :submit, 'Envoyer' %>
-    <% end %>
+    <div class='contact-request__form'>
+      <%= simple_form_for @contact_request  do |f| %>
+        <div class="form__information">
+          <%= f.input :last_name, label: "Nom"%>
+          <%= f.input :first_name, label: "Prénom"%>
+          <%= f.input :email, label: "Email"%>
+          <%= f.input :phone_number, label: "Téléphone (Optionnel)"%>
+          <%= f.input :subject, label: "Sujet du message"%>
+        </div>
+
+        <div class="form__message">
+          <%= f.input :content, label: "Message" %>
+        </div>
+
+        <div class="form__button">
+          <%= button_tag(:div, type: 'submit', class: "button button--flex") do %>
+            Envoyer un message <i class="far fa-paper-plane button__icon"></i>
+          <% end %>
+        </div>
+
+      <% end %>
+    </div>
   </div>
 </section>
