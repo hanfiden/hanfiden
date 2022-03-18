@@ -4,6 +4,7 @@
 - 👱🏼‍♂️ Let's check out my [Portfolio](https://fidendev.fr) (Ctrl + click to open on new window)
 
 - 🧑🏼‍💻 Here, some of my projects:\
+[Airbnb-clone](https://fiden-airbnb-clone.vercel.app/) (with React and NextJs) (Ctrl + click to open on new window)\
 [Map-listing](https://map-listing.herokuapp.com/) (Ctrl + click to open on new window)\
 [RéAgi'Son](https://reagi-son.herokuapp.com) (Ctrl + click to open on new window)\
 [Web Glossary](https://webglossary.herokuapp.com) (Ctrl + click to open on new window)\
